@@ -1,0 +1,6 @@
+<h1><%= @task.description %></h1>
+<!-- on met @ parce que task vient du controller daans l'index html.erb on nen met pas dans la boucle parce c'est une variable locale. -->
+<%= link_to("edit", edit_task_path)%>
+<%= link_to("delete", task_path(@task), method: :delete)%>
+<!-- comme edit a son propre chemin pas le peine de definir la methode delete non  -->
+
